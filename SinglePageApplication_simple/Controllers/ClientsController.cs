@@ -15,6 +15,11 @@ namespace SinglePageApplication_simple.Controllers
 {
     public class ClientsController : ApiController
     {
+        public IQueryable<Client> GetMoviesByGenre(string login)
+        {
+            return db.Clients.Where(m =>
+              m.Login.Equals(login, StringComparison.Ordinal));
+        }
         private SinglePageApplication_simpleContext db = new SinglePageApplication_simpleContext();
 
         // GET: api/Clients
