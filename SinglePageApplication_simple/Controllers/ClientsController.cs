@@ -15,7 +15,7 @@ namespace SinglePageApplication_simple.Controllers
 {
     public class ClientsController : ApiController
     {
-        public IQueryable<Client> GetMoviesByGenre(string login)
+        public IQueryable<Client> GetClientsByGenre(string login)
         {
             return db.Clients.Where(m =>
               m.Login.Equals(login, StringComparison.Ordinal));

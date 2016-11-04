@@ -1,0 +1,18 @@
+{
+  "name": "SinglePageApplication_simple",
+  "homepage": "https://github.com/frsab/SinglePageApplication_simple",
+  "authors": [
+    "FRAJ Saber <frejsaber@gmail.com>"
+  ],
+  "description": "SPA c# with angular",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
