@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="app"  ng-strict-di>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="./../../bower_components/angular/angular.js"></script>
+    <script src="./../javascript/app.js"></script>
+</head>
+<body>
+    <div ng-controller="MyController">
+        <p>Usernames {{username}} {{userlastName}} </p>
+        <table class="table">
+            <tr>
+                <th> ID</th>
+                <th> Login</th>
+                <th> Password</th>
+            </tr>
+
+            <tr ng-repeat="c in clients">
+                <td> {{c.ID}}</td>
+                <td> {{c.login}}</td>
+                <td> {{c.password}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -91,6 +91,10 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\html\index.html" />
+    <Content Include="wwwroot\javascript\app.js" />
+    <Content Include="wwwroot\javascript\controller.js" />
+    <Content Include="wwwroot\javascript\service.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
