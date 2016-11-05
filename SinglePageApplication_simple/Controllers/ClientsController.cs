@@ -26,7 +26,7 @@ namespace SinglePageApplication_simple.Controllers
         public IQueryable<Client> GetClients()
         {
             return db.Clients;
-        }
+        }        
 
         // GET: api/Clients/5
         [ResponseType(typeof(Client))]

@@ -11,6 +11,7 @@ namespace SinglePageApplication_simple
     {
         protected void Application_Start()
         {
+            Console.WriteLine("hello, I'm inWebApiApplication : System.Web.HttpApplication ");
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
