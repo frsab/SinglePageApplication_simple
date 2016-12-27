@@ -1,7 +1,7 @@
 ﻿var app = angular.module('app', []);
 
 /*******************************************************************/
-app.controller('MyController', ['$scope', '$http', function ($scope, $http) {
+app.controller('MyController', ['$scope', '$http','$filter', function ($scope, $http,$filter) {
         getMesClients();
     function getMesClients() {
         monURL = "http://localhost:49688/api/Clients";
