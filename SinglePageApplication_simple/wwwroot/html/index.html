@@ -6,22 +6,22 @@
 	<meta charset="utf-8" />
     <script src="./../../bower_components/angular/angular.js"></script>
     <script src="./../javascript/app.js"></script>
+    <script src="./../javascript/ClientsService.js"></script>
 </head>
 <body>
     <div ng-controller="MyController">
-        <p>Usernames {{username}} {{userlastName}} </p>
         <table class="table">
             <tr>
-                <th> ID</th>
+                <th> ID </th>
                 <th> Login</th>
                 <th> Password</th>
             </tr>
-
-            <tr ng-repeat="c in clients">
-                <td> {{c.ID}}</td>
-                <td> {{c.login}}</td>
-                <td> {{c.password}}</td>
+            <tr ng-repeat="u in users">
+                <td> {{u.ID}}</td>
+                <td> {{u.Login}}</td>
+                <td> {{u.Password}}</td>
             </tr>
+           
         </table>
     </div>
 </body>

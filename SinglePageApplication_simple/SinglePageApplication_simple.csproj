@@ -94,7 +94,7 @@
     <Content Include="wwwroot\html\index.html" />
     <Content Include="wwwroot\javascript\app.js" />
     <Content Include="wwwroot\javascript\controller.js" />
-    <Content Include="wwwroot\javascript\service.js" />
+    <Content Include="wwwroot\javascript\ClientsService.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
