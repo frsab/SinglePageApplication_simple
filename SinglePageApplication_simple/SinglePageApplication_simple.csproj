@@ -91,6 +91,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\html\index.html" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\javascript\app.js" />
     <Content Include="wwwroot\javascript\controller.js" />
@@ -117,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="wwwroot\html\" />
+    <Folder Include="wwwroot\html\App_LocalResources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

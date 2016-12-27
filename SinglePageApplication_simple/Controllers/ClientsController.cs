@@ -13,6 +13,7 @@ using SinglePageApplication_simple.Models;
 
 namespace SinglePageApplication_simple.Controllers
 {
+    [Authorize]
     public class ClientsController : ApiController
     {
         public IQueryable<Client> GetClientsByGenre(string login)
