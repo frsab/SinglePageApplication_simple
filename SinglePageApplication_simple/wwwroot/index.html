@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html ng-app="app"  ng-strict-di>
+<html ng-app="app" ng-strict-di>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-	<meta charset="utf-8" />
-    <script src="./../../bower_components/angular/angular.js"></script>
-    <script src="./../javascript/app.js"></script>
-    <script src="./../javascript/ClientsService.js"></script>
+    <meta charset="utf-8" />
+    <script src="./../bower_components/angular/angular.js"></script>
+    <script src="./javascript/app.js"></script>
+    <script src="./javascript/ClientsService.js"></script>
 </head>
 <body>
     <div ng-controller="MyController">
@@ -15,13 +15,16 @@
                 <th> ID </th>
                 <th> Login</th>
                 <th> Password</th>
+                <th> Date d'iscription</th>
+
             </tr>
             <tr ng-repeat="u in users">
                 <td> {{u.ID}}</td>
                 <td> {{u.Login}}</td>
                 <td> {{u.Password}}</td>
+                <td> {{u.InscriptionDate}}</td>
             </tr>
-           
+
         </table>
     </div>
 </body>
