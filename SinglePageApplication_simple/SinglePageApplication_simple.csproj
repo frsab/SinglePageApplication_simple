@@ -91,9 +91,19 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\css\main.htm" />
     <Content Include="wwwroot\css\StyleSheet1.css" />
     <Content Include="wwwroot\html\index.html" />
+    <Content Include="wwwroot\html\views\annonces.htm" />
+    <Content Include="wwwroot\html\views\add_annonces.htm" />
+    <Content Include="wwwroot\html\views\research.htm" />
+    <Content Include="wwwroot\html\views\stats.htm" />
+    <Content Include="wwwroot\html\views\main.htm" />
+    <Content Include="wwwroot\img\favicon.ico" />
+    <Content Include="wwwroot\img\favicon2.ico" />
+    <Content Include="wwwroot\img\favicon3.ico" />
     <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\javascript\app-with-ngRoute.js" />
     <Content Include="wwwroot\javascript\app.js" />
     <Content Include="wwwroot\javascript\controller.js" />
     <Content Include="wwwroot\javascript\ClientsService.js" />

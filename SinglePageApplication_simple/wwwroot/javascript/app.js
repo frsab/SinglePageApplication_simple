@@ -9,7 +9,8 @@ app.controller('MyController', ['$scope', '$http','$filter', function ($scope, $
             success(function (data, status,header) {
                 console.log(data);
                 $scope.users = data;
-                document.getElementById("login-form").style.visibility = "hidden"; 
+                document.getElementById("login-form").style.visibility = "hidden";
+                document.getElementById("erreur").style.visibility = "hidden";
             }).
             error(function (data, status) {
                 
