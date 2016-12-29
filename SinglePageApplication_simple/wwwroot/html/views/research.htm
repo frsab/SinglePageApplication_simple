@@ -1,19 +1,9 @@
-﻿<div class="container" id="login-form">
-    <div class="row">
-        <div class="center-form panel">
-            <div class="panel-body">
-                <h2 class="text-center">Recherche</h2>
-                <form method="post" ng-submit="research()" name="loginForm">
-                    <div class="form-group">
-                        <input class="form-control input-lg" type="text" name="email"
-                               ng-model="email" placeholder="Email" required autofocus>
-                    </div>
-                    
-                    <button type="submit"    class="btn btn-lg btn-block btn-success">
-                        trouver ..
-                    </button>
-                </form>
-            </div>
-        </div>
+﻿<div ng-controller="researchCtrl">
+    <div>
+        tout simplement une vue gérée par le controlleur researchCtrl
+        et  la preuve  ce que ma variable  a été modifier par le controlleur {{researchCtrlScoped}}
+        <span>heure d'instanciation de controlleur {{researchCtrlDate|date:'yyyy-MM-dd HH:mm:ss Z'}} </span>
+        <span>heure de chargement de la page {{researchCtrlDate2|date:'yyyy-MM-dd HH:mm:ss Z'}} </span>
     </div>
+
 </div>
