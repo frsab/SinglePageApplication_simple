@@ -26,8 +26,8 @@ app.config(function ($routeProvider) {
     });
 });
 /************************************************/
-/*Les constantes gérant la connexion sont définies ici*/
-/*
+/*Les constantes gérants la connexion sont définies ici*/
+
 app.constant('USER_ROLES', {
     all: '*',
     admin: 'admin',
@@ -42,4 +42,3 @@ app.constant('AUTH_EVENTS', {
     nonConnecte: 'auth-non-connecte',
     nonAutorise: 'auth-not-autorise'
 });
-*/
