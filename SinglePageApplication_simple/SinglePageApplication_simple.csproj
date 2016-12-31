@@ -113,10 +113,13 @@
     <Content Include="wwwroot\javascript\app2\controllers\mainCtrl.js" />
     <Content Include="wwwroot\javascript\app2\controllers\researchCtrl.js" />
     <Content Include="wwwroot\javascript\app2\controllers\statsCtrl.js" />
+    <Content Include="wwwroot\javascript\app2\includeControllers.js" />
+    <Content Include="wwwroot\javascript\app2\loginApp.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ClientsController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

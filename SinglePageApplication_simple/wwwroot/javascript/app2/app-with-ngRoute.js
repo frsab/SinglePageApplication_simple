@@ -1,5 +1,4 @@
 ﻿var app = angular.module('appWithNgRoute', ['ngRoute']);
-
 /***********************************************/
 
 app.config(function ($routeProvider) {
@@ -26,6 +25,11 @@ app.config(function ($routeProvider) {
     });
 });
 /************************************************/
+
+
+
+
+
 /*Les constantes gérants la connexion sont définies ici*/
 
 app.constant('USER_ROLES', {

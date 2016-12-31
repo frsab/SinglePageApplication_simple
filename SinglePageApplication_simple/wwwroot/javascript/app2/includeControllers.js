@@ -13,3 +13,6 @@ function includeFiles(folder, filesNames) {
     return "succes";
 }
 myF=includeFiles("../javascript/app2/controllers/", myFiles);
+if (myF === "succes") {
+    console.log(myF+ " importation .. "+ myFiles);
+}
