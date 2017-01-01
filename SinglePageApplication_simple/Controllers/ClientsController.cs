@@ -16,7 +16,7 @@ namespace SinglePageApplication_simple.Controllers
     [Authorize]
     public class ClientsController : ApiController
     {
-        public IQueryable<Client> GetClientsByGenre(string login)
+        public IQueryable<Client> GetClientsByLogin(string login)
         {
             return db.Clients.Where(m =>
               m.Login.Equals(login, StringComparison.Ordinal));

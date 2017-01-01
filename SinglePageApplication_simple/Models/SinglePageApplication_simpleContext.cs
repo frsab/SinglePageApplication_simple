@@ -20,5 +20,6 @@ namespace SinglePageApplication_simple.Models
         }
 
         public System.Data.Entity.DbSet<SinglePageApplication_simple.Models.Client> Clients { get; set; }
+        public System.Data.Entity.DbSet<SinglePageApplication_simple.Models.UserModel> Users { get; set; }
     }
 }
