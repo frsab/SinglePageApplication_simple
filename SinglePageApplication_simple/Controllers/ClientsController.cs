@@ -16,12 +16,12 @@ namespace SinglePageApplication_simple.Controllers
     [Authorize]
     public class ClientsController : ApiController
     {
+        private SinglePageApplication_simpleContext db = new SinglePageApplication_simpleContext();
         public IQueryable<Client> GetClientsByLogin(string login)
         {
             return db.Clients.Where(m =>
               m.Login.Equals(login, StringComparison.Ordinal));
         }
-        private SinglePageApplication_simpleContext db = new SinglePageApplication_simpleContext();
 
         // GET: api/Clients
         public IQueryable<Client> GetClients()
