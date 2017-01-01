@@ -25,6 +25,34 @@ app.config(function ($routeProvider) {
     });
 });
 /************************************************/
+app.factory('authService',['$http','$q','localStorageService',function($http,$q,localStorageService){
+    var serviceBase='http://localhost:49688/api/users';
+    var authServiceFactory={};
+    var _authentification={        isAuth:false,        userName:""    };
+    var _saveRegistration = function(registration){};
+   
+    var login = function (loginData){
+        var data= "grant_type=password&username="+loginData.userName+"&password"+loginData.password;
+        var deferred=$q.defer();
+        $http.post(serviceBase+'/login',data,{headers: {  'Content-Type' : 'application/x-www-form-urlencoded' }})
+
+        .sucess(function(reponse){
+            localStorageService.set(  'authorizationData', { token:reponse, userName : loginData.userName } );
+            _authentification.isAuth=true;
+            _authentification.userName=loginData.userName;
+            deferred.resolve(reponse);
+        })
+
+        .error(function(err,status){
+            _logOut();
+            deferred.reject(err);
+        });
+        return deferred.promise;
+    };
+}]);
+
+
+/************************************************/
 
 
 
