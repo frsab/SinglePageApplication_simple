@@ -1,4 +1,4 @@
-﻿var app = angular.module('appWithNgRoute', ['ngRoute']);
+﻿var app = angular.module('appWithNgRoute', ['ngRoute','LocalStorageModule']);
 /***********************************************/
 
 app.config(function ($routeProvider) {
