@@ -25,6 +25,7 @@ app.config(function ($routeProvider) {
     });
 });
 /************************************************/
+/*
 app.factory('authService',['$http','$q','localStorageService',function($http,$q,localStorageService){
     var serviceBase='http://localhost:49688/api/users';
     var authServiceFactory={};
@@ -51,7 +52,7 @@ app.factory('authService',['$http','$q','localStorageService',function($http,$q,
     };
 }]);
 
-
+*/
 /************************************************/
 
 
@@ -59,7 +60,7 @@ app.factory('authService',['$http','$q','localStorageService',function($http,$q,
 
 
 /*Les constantes gérants la connexion sont définies ici*/
-
+/*
 app.constant('USER_ROLES', {
     all: '*',
     admin: 'admin',
@@ -74,3 +75,4 @@ app.constant('AUTH_EVENTS', {
     nonConnecte: 'auth-non-connecte',
     nonAutorise: 'auth-not-autorise'
 });
+*/
