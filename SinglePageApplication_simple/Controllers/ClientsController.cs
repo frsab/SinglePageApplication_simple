@@ -13,7 +13,7 @@ using SinglePageApplication_simple.Models;
 
 namespace SinglePageApplication_simple.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ClientsController : ApiController
     {
         private SinglePageApplication_simpleContext db = new SinglePageApplication_simpleContext();
