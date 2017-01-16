@@ -7,6 +7,8 @@
     <script src="./../bower_components/angular/angular.js"></script>
     <script src="./javascript/app1/app.js"></script>
     <script src="./javascript/app1/ClientsService.js"></script>
+    <script src="./javascript/app1/directives/personne.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" media="all" />
 </head>
 <body>
@@ -29,7 +31,15 @@
                 <td> {{u.InscriptionDate | date}}</td>
             </tr>
         </table>
-    </div>
+        
+        <h1>Affichage avec Directive personnalisé <code>&lt;personne&gt;&lt;/personne&gt;</code> le soi disant </h1>
+        <div ng-repeat="personne in users">
+            <div>
+                <personne/>
+            </div>
+           
+        </div>
+      </div>
  <!--
      
     <div class="container" id="login-form">
@@ -59,8 +69,7 @@
      
      -->
 
-
-   
+  
 </body>
 
 </html>

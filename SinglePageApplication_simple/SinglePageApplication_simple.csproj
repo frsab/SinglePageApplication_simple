@@ -367,6 +367,7 @@
     <Content Include="wwwroot\img\favicon2.ico" />
     <Content Include="wwwroot\img\favicon3.ico" />
     <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\javascript\app1\directives\personne.js" />
     <Content Include="wwwroot\javascript\app2\app-with-ngRoute.js" />
     <Content Include="wwwroot\javascript\app1\app.js" />
     <Content Include="wwwroot\javascript\app1\controller.js" />
@@ -379,6 +380,7 @@
     <Content Include="wwwroot\javascript\app2\controllers\statsCtrl.js" />
     <Content Include="wwwroot\javascript\app2\includeControllers.js" />
     <Content Include="wwwroot\javascript\app2\loginApp.js" />
+    <Content Include="wwwroot\templates\personne.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
