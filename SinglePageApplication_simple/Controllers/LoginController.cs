@@ -11,7 +11,7 @@ namespace SinglePageApplication_simple.Controllers
 {
     public class LoginController : ApiController
     {
-        private SinglePageApplication_simpleContext db = new SinglePageApplication_simpleContext();
+        private SinglePageApplication_simpleContext db1 = new SinglePageApplication_simpleContext();
 
         [AllowAnonymous]
         [HttpPost]
@@ -36,7 +36,9 @@ namespace SinglePageApplication_simple.Controllers
 
         public IQueryable<UserModel> GetUsers()
         {
-            return db.Users;
+            // return db1.Users;
+            return null;
+
         }
 
     }
